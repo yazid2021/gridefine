@@ -1,3 +1,3 @@
 # gridefine
-CSS Grid acak-adul
+CSS Grid definisi yg ga niat
 belum update lagi, soon
