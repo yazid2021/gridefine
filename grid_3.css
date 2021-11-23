@@ -1,0 +1,63 @@
+
+
+body {
+    background-color: #fdfdfd;
+}
+
+h1 {
+    text-shadow: 0px 8px 10px rgb(202, 202, 202);
+}
+
+.container { 
+    display: grid;
+    width: 700px;
+    margin: 20px auto;
+    grid-template-columns: 200px 50% 200px;
+    grid-template-rows: 100px 190px 100px 50px;
+    padding-bottom: 1%;
+    
+}
+
+.container-flow {
+    display: grid;
+    width: 700px;
+    margin: 20px auto;
+    grid-template-rows: 100px;
+    grid-auto-flow: column;
+    padding-bottom: 5%;
+}
+
+.container-auto { 
+    display: grid;
+    width: 700px;
+    margin: 20px auto;
+    grid-template-columns: 200px 80%;
+    grid-template-rows: 100px 190px;
+    grid-auto-rows: 200px;
+    padding-bottom: 5%;
+}
+
+.container-auto_column { 
+    display: grid;
+    width: 700px;
+    margin: 20px auto;
+    grid-template-rows: 50px 50px;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+    padding-bottom: 5%;
+}
+
+.item, .item-flow, .item-auto, .item-auto_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #91acdf;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item:nth-child(even), .item-flow:nth-child(even), .item-auto:nth-child(even), 
+.item-auto_column:nth-child(even) {
+    background-color: rgb(224, 142, 160);
+}
